@@ -75,7 +75,7 @@ export default function CaseStudies() {
                 {/* Action Items list */}
                 <div className="mb-6">
                   <span className="block text-xs font-bold uppercase tracking-wider text-secondary mb-3">
-                    Action Undertaken
+                    Approach
                   </span>
                   <ul className="space-y-2.5">
                     {cs.actions.map((act, idx) => (
@@ -95,7 +95,7 @@ export default function CaseStudies() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-between items-start">
                   <div className="flex-1">
                     <span className="block text-xs font-bold uppercase tracking-wider text-secondary mb-1">
-                      Result
+                      Outcome
                     </span>
                     <p className="text-sm font-semibold text-primary">
                       {cs.outcome}
@@ -103,7 +103,7 @@ export default function CaseStudies() {
                   </div>
                   <div className="flex-1 bg-success/5 border border-success/15 rounded-lg p-3 w-full sm:w-auto">
                     <span className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-success mb-1">
-                      <TrendingUp className="h-3 w-3" /> Business Value
+                      <TrendingUp className="h-3 w-3" /> Operational Impact
                     </span>
                     <p className="text-xs font-medium text-body">
                       {cs.businessValue}
