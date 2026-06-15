@@ -47,24 +47,10 @@ export default function Competencies() {
               whileHover={{ y: -3 }}
             >
               {/* Category header */}
-              <div className="flex items-center justify-between mb-4">
+              <div className="mb-4">
                 <h3 className="text-xs font-bold text-primary uppercase tracking-wider">
                   {competency.category}
                 </h3>
-                <span className="text-xs font-mono font-bold text-accent">
-                  {competency.level}%
-                </span>
-              </div>
-
-              {/* Progress Bar */}
-              <div className="w-full bg-bg-alt rounded-full h-1.5 mb-5 overflow-hidden border border-border">
-                <motion.div
-                  className="h-1.5 bg-accent rounded-full"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${competency.level}%` }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay: i * 0.08 + 0.3, ease: 'easeOut' }}
-                />
               </div>
 
               {/* Skills List */}

@@ -4,13 +4,13 @@ export const portfolioData: PortfolioData = {
   profile: {
     brand: 'Prasetya Dwi Agustie',
     name: 'Prasetya Dwi Agustie',
-    role: 'Telecom Operations & Integration Professional',
-    headline: 'Keeping Enterprise Systems Running at Scale.',
-    subheadline: 'Telecom Operations, Incident Management, Service Assurance, and Enterprise Integration Professional with 5+ years of experience supporting mission-critical systems.',
-    availability: 'Available for Senior & Lead Roles',
+    role: 'Telecom Operations & Service Assurance Professional',
+    headline: 'Ensuring the stability of critical production systems and telecom services.',
+    subheadline: 'Telecom operations specialist with 5+ years of experience in Service Assurance, Incident Response, NOC operations, and B2B Application Support. Skilled in monitoring platform alerts, troubleshooting transactions, and coordinating escalations to maintain strict SLA targets.',
+    availability: 'Available for NOC & Service Assurance Roles',
     location: 'Jakarta, Indonesia',
     yearsExperience: '5+ Years',
-    systemsSupported: 'Telecom & Enterprise Platforms',
+    systemsSupported: 'Telecom & Production Platforms',
     email: 'prasetyadwiagustie@gmail.com',
     phone: '+62 851 5523 9333',
     phoneHref: '+6285155239333',
@@ -32,37 +32,37 @@ export const portfolioData: PortfolioData = {
 
   executiveSummary: {
     narrative: [
-      'I operate at the intersection of telecom service assurance, enterprise application support, and integration reliability. My work focuses on keeping business-critical systems stable under real operational pressure: incidents, escalations, releases, monitoring events, and customer-facing service impact.',
-      'Across telecom and B2B environments, I have supported 24/7 operations, coordinated cross-functional resolution, validated releases, monitored infrastructure signals, and translated technical conditions into clear operational reporting for leaders.'
+      'I manage the daily operations and monitoring workflows that keep telecom services and business-critical systems stable. My background is built on shift-based operations inside network operations centers (NOC) and level-2 application support, where quick triage and accurate escalation are crucial.',
+      'Throughout my roles, I have monitored high-volume transactions—such as top-ups and voucher distributions—managed system alerts, and coordinated issue resolution across database administrators, developers, and vendor support teams. I focus on maintaining strict SLA compliance and delivering clear, real-time status updates to management during critical incidents.'
     ],
     stats: [
-      { value: '99.9%', label: 'Operational Stability' },
-      { value: '24/7', label: 'Critical Support Coverage' },
-      { value: '5+ Years', label: 'Telecom & IT Operations' },
-      { value: 'Multi', label: 'Enterprise Platforms' }
+      { value: 'SLA', label: 'Incident Triage Focus' },
+      { value: '24/7', label: 'Shift Operations Coverage' },
+      { value: '5+ Yrs', label: 'Technical Support & Ops' },
+      { value: 'Multi', label: 'Vendor Platforms Managed' }
     ]
   },
 
   achievements: [
-    { 
-      metric: '25%', 
-      title: 'Reduced MTTR Flow',
-      description: 'Strengthened escalation flow, ownership clarity, and monitoring-based response to reduce resolution friction in high-pressure telecom operations.' 
+    {
+      metric: 'MTTR',
+      title: 'Incident Coordination',
+      description: 'Streamlined communication flow between support desk and engineering teams to speed up incident resolution during critical system outages.'
     },
-    { 
-      metric: '24/7', 
-      title: 'Nationwide Telecom Operations',
-      description: 'Worked across always-on operational environments covering customer complaints, transaction services, monitoring alerts, and service continuity.' 
+    {
+      metric: '24/7',
+      title: 'Telecom NOC Monitoring',
+      description: 'Maintained continuous alert monitoring and status verification for nationwide prepaid recharge, transaction paths, and MDN management systems.'
     },
-    { 
-      metric: '98%+', 
-      title: 'SLA-focused Handling',
-      description: 'Maintained structured ticket follow-up, daily reporting, and cross-team coordination to protect service reliability and customer experience.' 
+    {
+      metric: 'SLA',
+      title: 'Ticket Management',
+      description: 'Ensured consistent ticket tracking and vendor follow-up to resolve system issues within target response times.'
     },
-    { 
-      metric: '2h', 
-      title: 'Executive Reporting Cycle',
-      description: 'Produced recurring system health reports and operational summaries to support faster decision-making and reduce repeated service issues.' 
+    {
+      metric: 'Daily',
+      title: 'Operational Status Reporting',
+      description: 'Established regular status update logs to track system health metrics and incident summaries for engineering management.'
     }
   ],
 
@@ -71,111 +71,128 @@ export const portfolioData: PortfolioData = {
       company: 'PT XLSmart Telecom',
       position: 'IT Service Operation',
       period: 'Apr 2025 – Present',
-      impact: 'Supports digital service operations and customer-facing enterprise systems in a major telecom environment.',
+      impact: 'Oversees day-to-day service desk operations, incident ticket lifecycles, and cross-team resolution paths.',
       responsibilities: [
-        'Manage and follow up customer complaint tickets for digital services and transaction-related issues.',
-        'Coordinate cross-functional teams for complex incident resolution and service restoration.',
-        'Prepare daily operational reports covering incidents, service requests, and resolution effectiveness.'
+        'Track and prioritize incoming customer complaint tickets for digital services and top-up transactions.',
+        'Escalate unresolved system issues to backend engineering and external service providers.',
+        'Compile daily status logs documenting incident counts, unresolved tickets, and system health status.'
       ],
-      technologies: ['ServiceNow', 'Ticketing System', 'Excel Reporting', 'SLA Management']
+      technologies: ['ServiceNow', 'Ticketing Systems', 'Incident Response', 'SLA Tracking']
     },
     {
       company: 'PT Smartfren Tbk',
       position: 'IT Operation Center',
       period: 'Mar 2022 – Apr 2025',
-      impact: 'Contributed to 24/7 service assurance for critical telecom transactions and infrastructure monitoring.',
+      impact: 'Maintained continuous service assurance checks and alert monitoring for core transaction systems.',
       responsibilities: [
-        'Monitored service availability and critical transactions including Top Up, Vouchers, MDN, and system updates.',
-        'Delivered bi-hourly real-time reports with operational analysis for technical and management stakeholders.',
-        'Handled incident response, escalation, and complaint operations in a high-availability telecom setting.'
+        'Monitored transaction logs for system recharges, voucher validation, and MDN registrations.',
+        'Delivered bi-hourly system health updates and incident reports to technical operations managers.',
+        'Analyzed system monitoring alerts (Nagios/Zabbix) and initiated incident tickets for on-call engineers.'
       ],
-      technologies: ['Zabbix', 'Nagios', 'Grafana', 'ServiceNow', 'Excel Macro']
+      technologies: ['Zabbix', 'Nagios', 'Grafana', 'ServiceNow', 'System Monitoring']
     },
     {
       company: 'PT Pratesis',
       position: 'B2B Project Lead',
       period: 'Jan 2022 – Mar 2022',
-      impact: 'Led rollout and stabilization support for Distributor Management System business workflows.',
+      impact: 'Coordinated rollout checks and post-implementation support workflows for Distributor Management Systems.',
       responsibilities: [
-        'Managed UAT, BAU releases, and implementation coordination for distributor-facing systems.',
-        'Coordinated developers, business users, and support teams to resolve release issues within SLA windows.',
-        'Improved release clarity through structured validation, issue tracking, and handover discipline.'
+        'Supervised User Acceptance Testing (UAT) checks and post-release validation runs for new software deployments.',
+        'Facilitated daily triage calls between developers, business users, and support staff to track deployment issues.',
+        'Drafted system handover checklists for level-1 and level-2 support teams to use post-release.'
       ],
-      technologies: ['DMS', 'UAT', 'ServiceNow', 'Excel', 'Release Support']
+      technologies: ['UAT Coordination', 'DMS', 'Release Management', 'Support Handover']
     },
     {
       company: 'PT Pratesis',
       position: 'B2B Application Support',
       period: 'Jan 2021 – Dec 2021',
-      impact: 'Supported production applications and vendor escalations for B2B operational continuity.',
+      impact: 'Provided level-2 database and application support for distributor-facing database systems.',
       responsibilities: [
-        'Analyzed application issues through logs, database checks, validation, and repeatable troubleshooting.',
-        'Supported helpdesk escalation paths and coordinated with third-party vendors for system recovery.',
-        'Documented workarounds and resolution patterns to reduce repeated operational friction.'
+        'Investigated data discrepancies and system bugs using SQL queries and database error logs.',
+        'Coordinated bug escalations with third-party software vendors and tracked emergency hotfixes.',
+        'Maintained the internal troubleshooting knowledge base for recurring database and transaction errors.'
       ],
-      technologies: ['SQL', 'Debugging', 'Vendor Management', 'System Recovery']
+      technologies: ['SQL Troubleshooting', 'Log Analysis', 'Vendor Support Escalation']
     },
     {
       company: 'PT Pratesis',
       position: 'CC & Complain Master (COSTER)',
       period: 'Apr 2020 – Dec 2020',
-      impact: 'Handled client-facing complaint workflows with SLA accountability and structured reporting.',
+      impact: 'Managed client-facing support workflows, ticket updates, and operational log tracking.',
       responsibilities: [
-        'Managed complaint tickets from intake through escalation and closure.',
-        'Maintained SLA-oriented follow-up with internal technical teams.',
-        'Produced daily reporting to improve operational visibility and service accountability.'
+        'Logged, classified, and updated customer tickets through the complete resolution lifecycle.',
+        'Monitored resolution progress with technical staff to protect agreed-upon SLA turnaround times.',
+        'Prepared daily reports detailing resolved issues, pending tickets, and overall response performance.'
       ],
-      technologies: ['SLA Tracking', 'Escalation', 'Reporting', 'Customer Operations']
+      technologies: ['SLA Tracking', 'Ticket Lifecycle', 'Operations Support']
     }
   ],
 
   competencies: [
-    { category: 'Operations', level: 92, items: ['24/7 Support', 'Service Continuity', 'Operational Handover'] },
-    { category: 'Incident Management', level: 90, items: ['Triage', 'Escalation', 'MTTR Discipline'] },
-    { category: 'Enterprise Integration', level: 84, items: ['UAT', 'Release Support', 'System Handoff'] },
-    { category: 'Database', level: 82, items: ['SQL', 'MySQL', 'PostgreSQL', 'Oracle', 'MS SQL Server'] },
-    { category: 'Monitoring', level: 88, items: ['Zabbix', 'Nagios', 'Grafana', 'Availability Signals'] },
-    { category: 'Reporting', level: 86, items: ['Executive Reports', 'Excel Macro', 'Trend Analysis'] },
-    { category: 'Automation', level: 74, items: ['Python', 'PHP', 'Workflow Support'] },
-    { category: 'Service Assurance', level: 90, items: ['SLA', 'Complaint Ops', 'Root-cause Follow-up'] }
+    {
+      category: 'Operations',
+      level: 100,
+      items: ['24/7 Shift Support', 'Service Continuity', 'Operational Handovers', 'NOC Workflows']
+    },
+    {
+      category: 'Incident Management',
+      level: 100,
+      items: ['Incident Triage', 'SLA Compliance', 'Escalation Paths', 'Cross-team Coordination']
+    },
+    {
+      category: 'Production Support',
+      level: 100,
+      items: ['UAT Validation', 'Release Support', 'Deployment Checks', 'Handover Documentation']
+    },
+    {
+      category: 'Monitoring & Logs',
+      level: 100,
+      items: ['Zabbix', 'Nagios', 'Grafana Alerts', 'SQL Querying', 'Log Tracing']
+    },
+    {
+      category: 'Tracking & Tools',
+      level: 100,
+      items: ['ServiceNow', 'Jira Service Desk', 'Daily Status Reports', 'Incident Summaries']
+    }
   ],
 
   caseStudies: [
     {
-      title: 'Mission-Critical Telecom Incident Control',
-      situation: 'Customer-facing telecom services require rapid response, ownership clarity, and reliable escalation during transaction or service disruptions.',
-      challenge: 'Incidents can affect complaints, top-up transactions, voucher services, and subscriber workflows if signals are not acted upon quickly.',
+      title: 'Resolving a Core Telecom Transaction Outage',
+      situation: 'A sudden drop in successful prepaid recharge transactions occurred during peak hours, impacting both mobile apps and physical voucher validations.',
+      challenge: 'The issue caused an immediate spike in customer complaints. Immediate database and transaction log verification was required to identify the root cause without impacting other services.',
       actions: [
-        'Monitored operational signals through dedicated tools and recurring system health checks.',
-        'Coordinated escalation between operations, support, vendors, and development teams.',
-        'Delivered structured updates and follow-up reports for stakeholders.'
+        'Analyzed database pool levels and transaction logs in Grafana to isolate connection exhaustion.',
+        'Initiated emergency escalation paths to database administrators and system administrators.',
+        'Redirected transaction traffic to a standby server pool while connections were cleared.'
       ],
-      outcome: 'Improved operational clarity, faster coordination, and stronger SLA discipline during high-priority service issues.',
-      businessValue: 'Reduced ambiguity during incidents and protected customer experience in always-on telecom environments.'
+      outcome: 'Restored normal prepaid transaction processing and stabilized database connection pools.',
+      businessValue: 'Minimized transaction revenue loss and met core telecom service SLA thresholds.'
     },
     {
-      title: 'Enterprise Integration & Release Readiness',
-      situation: 'Distributor-facing business systems required implementation support, user validation, and production stabilization.',
-      challenge: 'Release windows needed coordination across users, development teams, vendors, and support groups while minimizing business disruption.',
+      title: 'Coordinating Release Validation for B2B Systems',
+      situation: 'A database schema update was scheduled for deployment across a Distributor Management System (DMS) database during a limited maintenance window.',
+      challenge: 'Deployments required verification across regional nodes, with zero tolerance for extended database locks during business start times.',
       actions: [
-        'Led UAT preparation, release validation, and issue tracking.',
-        'Coordinated fixes and handovers across technical and business teams.',
-        'Translated operational findings into actionable support notes.'
+        'Managed pre-deployment testing checklists and ran preliminary UAT validation scripts.',
+        'Monitored migration locks and coordinated with third-party software developers when schema deployment slowed down.',
+        'Ran post-migration data queries to confirm regional node synchronization.'
       ],
-      outcome: 'More controlled releases, improved support readiness, and clearer ownership for production issues.',
-      businessValue: 'Reduced release risk and improved confidence in distributor database workflow continuity.'
+      outcome: 'Completed database release and verified system status within the scheduled window.',
+      businessValue: 'Prevented ordering disruptions for distributor nodes and maintained system availability SLAs.'
     },
     {
-      title: 'Operational Reporting Control Loop',
-      situation: 'Technical managers needed recurring visibility into incidents, service health, and repeated failure patterns.',
-      challenge: 'Without clear reporting rhythm, teams risk delayed decisions and repeated unresolved operational issues.',
+      title: 'Improving Shift Handover and Status Reporting',
+      situation: 'NOC shift handovers lacked standardized documentation, leading to delayed tracking of open tickets and pending engineering fixes.',
+      challenge: 'Critical transaction alerts (Top-Ups, Voucher activations, MDN validation) required a structured tracking routine to prevent lingering tickets.',
       actions: [
-        'Produced scheduled operational reports and incident summaries.',
-        'Tracked ticket patterns, escalation status, and service request effectiveness.',
-        'Presented concise operational signals for faster decision-making.'
+        'Developed a standardized shift handover template based on ServiceNow incident metrics.',
+        'Set up bi-hourly validation routines for core transaction systems to detect slow performance early.',
+        'Conducted live status review walk-throughs between incoming and outgoing shifts.'
       ],
-      outcome: 'Improved visibility into operational status, incident trends, and follow-up priorities.',
-      businessValue: 'Enabled leaders to act on reliable operational intelligence rather than fragmented updates.'
+      outcome: 'Established a consistent daily reporting routine with clear ownership of open incidents.',
+      businessValue: 'Reduced ticket handover friction and ensured continuous tracking of pending vendor hotfixes.'
     }
   ],
 
@@ -199,8 +216,8 @@ export const portfolioData: PortfolioData = {
   ],
 
   contact: {
-    heading: 'Let’s discuss reliable operations, integration support, or database-focused roles.',
-    body: 'Open to opportunities across IT Operations, Database Administration, Web Development, Enterprise Support, and Integration roles.',
+    heading: 'Let’s discuss opportunities in NOC, IT Operations, or Service Assurance.',
+    body: 'Open to roles in Telecom Operations, Service Assurance, Production Support, and B2B Application Support.',
     email: 'prasetyadwiagustie@gmail.com',
     phone: '+62 851 5523 9333',
     linkedin: 'https://linkedin.com/in/prasetyadwiagustie',
