@@ -4,13 +4,13 @@ export const portfolioData: PortfolioData = {
   profile: {
     brand: 'Prasetya Dwi Agustie',
     name: 'Prasetya Dwi Agustie',
-    role: 'Telecom Operations & Service Assurance Professional',
-    headline: 'Ensuring the stability of critical production systems and telecom services.',
-    subheadline: 'Telecom operations specialist with 5+ years of experience in Service Assurance, Incident Response, NOC operations, and B2B Application Support. Skilled in monitoring platform alerts, troubleshooting transactions, and coordinating escalations to maintain strict SLA targets.',
-    availability: 'Available for NOC & Service Assurance Roles',
+    role: 'Telecom Operations & Enterprise Systems Professional',
+    headline: 'Ensuring stability for mission-critical telecom services and enterprise platforms.',
+    subheadline: 'Telecom Operations & Enterprise Systems Professional with hands-on experience developing and supporting internal business-critical applications using ASP.NET, Oracle Database, IIS, SQL, and Service Assurance processes.',
+    availability: 'Available for NOC, Support, & Ops Roles',
     location: 'Jakarta, Indonesia',
     yearsExperience: '5+ Years',
-    systemsSupported: 'Telecom & Production Platforms',
+    systemsSupported: 'Telecom & Enterprise Platforms',
     email: 'prasetyadwiagustie@gmail.com',
     phone: '+62 851 5523 9333',
     phoneHref: '+6285155239333',
@@ -32,18 +32,23 @@ export const portfolioData: PortfolioData = {
 
   executiveSummary: {
     narrative: [
-      'I manage the daily operations and monitoring workflows that keep telecom services and business-critical systems stable. My background is built on shift-based operations inside network operations centers (NOC) and level-2 application support, where quick triage and accurate escalation are crucial.',
-      'Throughout my roles, I have monitored high-volume transactions—such as top-ups and voucher distributions—managed system alerts, and coordinated issue resolution across database administrators, developers, and vendor support teams. I focus on maintaining strict SLA compliance and delivering clear, real-time status updates to management during critical incidents.'
+      'I oversee operational stability and application reliability for critical telecom services and internal enterprise systems. My background spans hands-on application support, database troubleshooting, and developer-operational coordination inside network operations centers (NOC).',
+      'Equally active in both operations and support engineering, I have supported internal tools and customer-facing prepaid transaction paths (Top-Ups, Voucher distributions, MDN tracking). I focus on designing and deploying service assurance tooling, managing release rollouts, querying relational databases, and driving SLA compliance during incidents.'
     ],
     stats: [
-      { value: 'SLA', label: 'Incident Triage Focus' },
-      { value: '24/7', label: 'Shift Operations Coverage' },
-      { value: '5+ Yrs', label: 'Technical Support & Ops' },
-      { value: 'Multi', label: 'Vendor Platforms Managed' }
+      { value: 'SLA', label: 'Service Assurance Focus' },
+      { value: '24/7', label: 'Operations Coverage' },
+      { value: '5+ Yrs', label: 'Telecom & B2B Operations' },
+      { value: 'Multi', label: 'Vendor Systems Integrated' }
     ]
   },
 
   achievements: [
+    {
+      metric: 'Apps',
+      title: 'Enterprise Applications',
+      description: 'Developed and supported internal operational systems used for telecom service assurance, ticket management, SLA monitoring, and subscriber validation.'
+    },
     {
       metric: 'MTTR',
       title: 'Incident Coordination',
@@ -58,11 +63,6 @@ export const portfolioData: PortfolioData = {
       metric: 'SLA',
       title: 'Ticket Management',
       description: 'Ensured consistent ticket tracking and vendor follow-up to resolve system issues within target response times.'
-    },
-    {
-      metric: 'Daily',
-      title: 'Operational Status Reporting',
-      description: 'Established regular status update logs to track system health metrics and incident summaries for engineering management.'
     }
   ],
 
@@ -71,13 +71,16 @@ export const portfolioData: PortfolioData = {
       company: 'PT XLSmart Telecom',
       position: 'IT Service Operation',
       period: 'Apr 2025 – Present',
-      impact: 'Oversees day-to-day service desk operations, incident ticket lifecycles, and cross-team resolution paths.',
+      impact: 'Oversees day-to-day service desk operations, incident ticket lifecycles, and internal operational tooling development.',
       responsibilities: [
-        'Track and prioritize incoming customer complaint tickets for digital services and top-up transactions.',
-        'Escalate unresolved system issues to backend engineering and external service providers.',
-        'Compile daily status logs documenting incident counts, unresolved tickets, and system health status.'
+        'Developed and maintained internal operational applications using ASP.NET Web Forms and Oracle Database.',
+        'Built dashboards supporting ticket monitoring, SLA compliance tracking, and service assurance processes.',
+        'Performed production support and application troubleshooting in enterprise environments.',
+        'Collaborated with NOC, Service Assurance, IT Operations, and Business teams.',
+        'Managed deployment and maintenance through Microsoft IIS.',
+        'Created SQL and PL/SQL queries for reporting, validation, and operational analytics.'
       ],
-      technologies: ['ServiceNow', 'Ticketing Systems', 'Incident Response', 'SLA Tracking']
+      technologies: ['ASP.NET Web Forms', 'Oracle Database', 'IIS', 'SQL/PL-SQL', 'ServiceNow', 'SLA Tracking']
     },
     {
       company: 'PT Smartfren Tbk',
@@ -131,33 +134,47 @@ export const portfolioData: PortfolioData = {
 
   competencies: [
     {
-      category: 'Operations',
+      category: 'Telecom Operations',
       level: 100,
-      items: ['24/7 Shift Support', 'Service Continuity', 'Operational Handovers', 'NOC Workflows']
+      items: ['Service Assurance', 'NOC Shift Support', 'Incident Management', 'Problem Management', 'Ticket Lifecycle Management', 'SLA Monitoring']
     },
     {
-      category: 'Incident Management',
+      category: 'Enterprise Support',
       level: 100,
-      items: ['Incident Triage', 'SLA Compliance', 'Escalation Paths', 'Cross-team Coordination']
+      items: ['Production Support', 'Application Support', 'Root Cause Analysis', 'Performance Monitoring', 'Operational Handovers']
     },
     {
-      category: 'Production Support',
+      category: 'Database & SQL Development',
       level: 100,
-      items: ['UAT Validation', 'Release Support', 'Deployment Checks', 'Handover Documentation']
+      items: ['Oracle Database', 'SQL Development', 'PL/SQL', 'Log Tracing', 'Data Verification']
     },
     {
-      category: 'Monitoring & Logs',
+      category: 'Enterprise Development & Integration',
       level: 100,
-      items: ['Zabbix', 'Nagios', 'Grafana Alerts', 'SQL Querying', 'Log Tracing']
+      items: ['ASP.NET Web Forms', 'C#', 'Microsoft IIS', 'REST API Integration', 'System Integration']
     },
     {
-      category: 'Tracking & Tools',
+      category: 'Tools & Dashboarding',
       level: 100,
-      items: ['ServiceNow', 'Jira Service Desk', 'Daily Status Reports', 'Incident Summaries']
+      items: ['ServiceNow', 'Jira Service Desk', 'Zabbix / Nagios', 'Grafana Alerts', 'Daily Status Reports']
     }
   ],
 
   caseStudies: [
+    {
+      title: 'Enterprise IT Service Desk & SLA Monitoring Platform',
+      situation: 'Designed and developed an internal operational platform used by telecom support teams for ticket monitoring, SLA management, service assurance activities, subscriber validation, and operational reporting.',
+      challenge: 'Operations teams were using multiple disconnected systems to investigate customer complaints, service tickets, subscriber information, and SLA status. This resulted in longer investigation times and reduced operational visibility.',
+      actions: [
+        'Designed database integration with Oracle Database and created SQL and PL/SQL queries for data validation.',
+        'Developed ASP.NET Web Forms modules for trouble ticket monitoring and subscriber lookup.',
+        'Built dashboard modules for SLA compliance tracking and ticket aging visualization.',
+        'Implemented REST API integration to pull live subscription status and validate price plans.',
+        'Supported live production deployment and server configuration on Microsoft IIS.'
+      ],
+      outcome: 'Consolidated support cockpit resulting in faster ticket investigations, automated dashboard generation, and improved SLA compliance tracking.',
+      businessValue: 'Reduced manual operational effort and increased service assurance team productivity.'
+    },
     {
       title: 'Resolving a Core Telecom Transaction Outage',
       situation: 'A sudden drop in successful prepaid recharge transactions occurred during peak hours, impacting both mobile apps and physical voucher validations.',
@@ -195,6 +212,37 @@ export const portfolioData: PortfolioData = {
       businessValue: 'Reduced ticket handover friction and ensured continuous tracking of pending vendor hotfixes.'
     }
   ],
+
+  techStack: {
+    title: 'Technology Stack',
+    subtitle: 'Technologies, platforms, and tools used throughout telecom operations, service assurance, and enterprise application development.',
+    groups: [
+      {
+        category: 'Backend',
+        items: ['C#', 'ASP.NET Web Forms', 'REST APIs']
+      },
+      {
+        category: 'Frontend',
+        items: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'jQuery']
+      },
+      {
+        category: 'Database',
+        items: ['Oracle Database', 'SQL', 'PL/SQL']
+      },
+      {
+        category: 'Infrastructure',
+        items: ['Microsoft IIS', 'Windows Server']
+      },
+      {
+        category: 'Operations',
+        items: ['Incident Management', 'Service Assurance', 'SLA Monitoring', 'Ticket Management']
+      },
+      {
+        category: 'Enterprise Tools',
+        items: ['Service Desk Systems', 'Operational Dashboards', 'Reporting Platforms']
+      }
+    ]
+  },
 
   certifications: [
     {

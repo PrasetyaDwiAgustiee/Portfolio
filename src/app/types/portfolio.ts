@@ -61,6 +61,17 @@ export interface CaseStudy {
   businessValue: string;
 }
 
+export interface TechStackGroup {
+  category: string;
+  items: string[];
+}
+
+export interface TechStack {
+  title: string;
+  subtitle: string;
+  groups: TechStackGroup[];
+}
+
 export interface Certification {
   name: string;
   issuer: string;
@@ -76,6 +87,7 @@ export interface PortfolioData {
   experience: ExperienceItem[];
   competencies: Competency[];
   caseStudies: CaseStudy[];
+  techStack: TechStack;
   certifications: Certification[];
   contact: {
     heading: string;
