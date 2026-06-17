@@ -1,14 +1,14 @@
-import { PortfolioData } from '../types/portfolio';
+import type { PortfolioData } from '../types/portfolio';
 
 export const portfolioData: PortfolioData = {
   profile: {
     brand: 'Prasetya Dwi Agustie',
     name: 'Prasetya Dwi Agustie',
     role: 'Telecom Operations & Enterprise Systems Professional',
-    headline: 'Frontline operational support, incident handling, and internal application development.',
-    subheadline: 'I support telecom operations and enterprise platforms by handling daily production incidents, monitoring service status, and building internal tools. I write backend code, query database logs, and support operational teams to keep services stable.',
-    availability: 'Available for NOC, Support, & Ops Roles',
-    location: 'Jakarta, Indonesia',
+    headline: 'IT Service Operations & Enterprise Systems Engineer',
+    subheadline: 'Specializing in Telecom Platforms, Production Support, SQL Analytics and Internal Tools Development.',
+    availability: 'Open to IT Service Operations, Enterprise Support, and Telecom Technology Roles',
+    location: 'Depok, Indonesia',
     yearsExperience: '5+ Years',
     systemsSupported: 'Telecom & Enterprise Platforms',
     email: 'prasetyadwiagustie@gmail.com',
@@ -16,8 +16,8 @@ export const portfolioData: PortfolioData = {
     phoneHref: '+6285155239333',
     linkedin: 'https://linkedin.com/in/prasetyadwiagustie',
     github: 'https://github.com/prasetyadwiagustie',
-    image: 'assets/portrait.png',
-    fallbackImage: 'assets/portrait.svg',
+    image: 'assets/portrait2.png',
+    fallbackImage: 'assets/portrait2.svg',
     cv: 'CV - Prasetya Dwi Agustiee.pdf'
   },
 
@@ -31,15 +31,16 @@ export const portfolioData: PortfolioData = {
   ],
 
   executiveSummary: {
-    narrative: [
-      'I focus on monitoring telecom services, supporting daily operational platforms, and investigating production issues. During shift rotations, I track incoming transaction alerts, trace logs to isolate system errors, and work to resolve tickets within agreed SLA windows.',
-      'In addition to operational tasks, I write database queries and develop helper applications. Using ASP.NET Web Forms and Oracle Database, I construct internal dashboards and tools that help operations teams validate data, check subscriber profiles, and track open issues without manually compiling spreadsheets.'
-    ],
+  narrative: [
+    'IT Service Operations and Service Assurance professional with 5+ years of experience supporting telecom and enterprise systems in high-availability environments. Experienced in incident management, production support, root cause investigation, SLA monitoring, and operational service delivery.',
+
+    'Currently responsible for maintaining internal support platforms, developing operational tools, performing SQL and PL/SQL analysis, and supporting critical business services. Combining operational expertise with application development capabilities to improve service reliability, operational efficiency, and issue resolution processes.'
+  ],
     stats: [
-      { value: 'SLA', label: 'Service Assurance' },
-      { value: '24/7', label: 'Operations Support' },
-      { value: '5+ Yrs', label: 'Telecom & B2B Ops' },
-      { value: 'Oracle', label: 'Database & SQL' }
+      { value: '5+ Yrs', label: 'IT Service Operations' },
+      { value: '24/7', label: 'Production Support' },
+      { value: 'Oracle', label: 'SQL & PL/SQL Analytics' },
+      { value: 'ASP.NET', label: 'Internal Tools Development' }
     ]
   },
 
@@ -57,7 +58,7 @@ export const portfolioData: PortfolioData = {
     {
       metric: 'Process',
       title: 'Operational Process Improvement',
-      description: 'Reduced manual investigation effort by consolidating multiple operational workflows into centralized dashboards.'
+      description: 'Consolidated multiple operational checks into a single dashboard, making investigations easier for support teams.'
     },
     {
       metric: 'Ops',
@@ -71,7 +72,7 @@ export const portfolioData: PortfolioData = {
       company: 'PT XLSmart Telecom',
       position: 'IT Service Operation',
       period: 'Apr 2025 – Present',
-      impact: 'Responsible for daily service desk tickets, issue triage, and maintaining internal support applications.',
+      impact: 'Supported operational continuity of telecom services through production support, SQL investigation, and development of internal operational tools.',
       responsibilities: [
         'Investigated production incidents affecting telecom services and application stability.',
         'Developed and maintained internal operational applications using ASP.NET Web Forms and Oracle Database.',
@@ -135,29 +136,24 @@ export const portfolioData: PortfolioData = {
 
   competencies: [
     {
-      category: 'Telecom Operations',
-      level: 100,
+      category: 'Operations & Service Assurance',
+      level: 95,
       items: ['Service Assurance', 'NOC Shift Support', 'Incident Management', 'Problem Management', 'Ticket Lifecycle Management', 'SLA Monitoring']
     },
     {
       category: 'Enterprise Support',
-      level: 100,
+      level: 90,
       items: ['Production Support', 'Application Support', 'Root Cause Analysis', 'Performance Monitoring', 'Operational Handovers']
     },
     {
       category: 'Database & SQL Development',
-      level: 100,
+      level: 90,
       items: ['Oracle Database', 'SQL Development', 'PL/SQL', 'Log Tracing', 'Data Verification']
     },
     {
-      category: 'Enterprise Development & Integration',
-      level: 100,
-      items: ['ASP.NET Web Forms', 'C#', 'Microsoft IIS', 'REST API Integration', 'System Integration']
-    },
-    {
       category: 'Tools & Dashboarding',
-      level: 100,
-      items: ['ServiceNow', 'Jira Service Desk', 'Zabbix / Nagios', 'Grafana Alerts', 'Daily Status Reports']
+      level: 85,
+      items: ['ServiceNow', 'Zabbix / Nagios', 'Grafana Alerts', 'Daily Status Reports']
     }
   ],
 
@@ -177,7 +173,7 @@ export const portfolioData: PortfolioData = {
       businessValue: 'Centralized tools reduced manual status tracking steps, faster subscriber lookups, and improved support team daily productivity.'
     },
     {
-      title: 'Resolving a Core Telecom Transaction Outage',
+      title: 'Telecom Transaction Outage Investigation.',
       situation: 'Prepaid recharge transaction rates dropped suddenly during a high-traffic hour, stopping mobile applications and validation services.',
       challenge: 'Customer complaint tickets spiked. We needed to isolate the transaction bottleneck quickly without disrupting active system processes.',
       actions: [
@@ -186,10 +182,10 @@ export const portfolioData: PortfolioData = {
         'Managed alert status logs and provided progress updates to internal client support teams.'
       ],
       outcome: 'Restored transaction processing and resolved connection limits, clearing the pending transaction queues.',
-      businessValue: 'Resolved the core system block within SLA targets and minimized transaction revenue loss.'
+      businessValue: 'Worked with database administrators and operations teams to restore transaction processing and clear pending transaction queues.'
     },
     {
-      title: 'Coordinating Release Validation for B2B Systems',
+      title: 'B2B Release Validation',
       situation: 'A database schema update was scheduled for deployment across regional nodes of a Distributor Management System (DMS).',
       challenge: 'Deployment checks had to be completed within a short overnight maintenance window, leaving no room for database locks past start of business.',
       actions: [
@@ -277,3 +273,5 @@ export const portfolioData: PortfolioData = {
     github: 'https://github.com/prasetyadwiagustie'
   }
 };
+
+export {};

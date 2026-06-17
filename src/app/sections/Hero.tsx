@@ -38,7 +38,7 @@ export default function Hero() {
           >
             {/* Status tag */}
             <motion.div variants={itemVariants} className="flex items-center">
-              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-success/20 bg-success/5 text-[11px] tracking-wider uppercase font-semibold text-success">
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-success/20 bg-success/5 text-section-label uppercase font-medium tracking-wide text-success">
                 <span className="h-1.5 w-1.5 rounded-full bg-success animate-pulse" />
                 {profile.availability}
               </span>
@@ -47,7 +47,7 @@ export default function Hero() {
             {/* Main Headline */}
             <motion.h1 
               variants={itemVariants}
-              className="text-hero tracking-tightest font-extrabold text-primary"
+              className="text-hero-mobile sm:text-hero-tablet md:text-hero-desktop font-extrabold text-primary"
             >
               {profile.headline}
             </motion.h1>
@@ -55,7 +55,7 @@ export default function Hero() {
             {/* Subheadline description */}
             <motion.p 
               variants={itemVariants}
-              className="text-body-fluid text-body max-w-xl font-normal"
+              className="text-hero-desc-mobile sm:text-hero-desc-desktop text-body max-w-xl font-normal"
             >
               {profile.subheadline}
             </motion.p>
@@ -63,7 +63,7 @@ export default function Hero() {
             {/* Metadata Rows */}
             <motion.div 
               variants={itemVariants}
-              className="flex flex-wrap gap-4 text-xs font-semibold uppercase tracking-wider text-secondary mt-2"
+              className="flex flex-wrap gap-4 text-metadata font-semibold uppercase tracking-wider text-secondary mt-2"
             >
               <div className="flex items-center gap-2 bg-bg-alt border border-border px-3.5 py-2 rounded-lg shadow-sm">
                 <MapPin className="h-3.5 w-3.5 text-accent" />
@@ -82,7 +82,7 @@ export default function Hero() {
             {/* CTA Actions */}
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4 mt-4">
               <Button as="a" href="#contact">
-                Schedule Consultation
+                Contact Me
               </Button>
               <Button as="a" href={`/${profile.cv}`} className="border border-border bg-white text-body hover:bg-bg-alt transition-all" target="_blank" rel="noopener noreferrer">
                 Download CV

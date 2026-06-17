@@ -27,7 +27,7 @@ export const Button = ({
     >
       <Cmp
         className={cn(
-          "inline-flex items-center justify-center px-5 py-2.5 text-xs font-semibold uppercase tracking-wider transition-all rounded-lg border focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg",
+          "inline-flex items-center justify-center px-5 py-2.5 text-body-sm font-medium uppercase tracking-wide transition-all rounded-lg border focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg",
           isPrimary
             ? "bg-accent hover:bg-accent-light text-white border-accent shadow-sm"
             : "bg-white hover:bg-bg-alt border-border text-primary hover:text-accent shadow-sm",

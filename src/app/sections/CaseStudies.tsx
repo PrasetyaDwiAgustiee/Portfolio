@@ -26,10 +26,10 @@ export default function CaseStudies() {
           variants={fadeUp}
           custom={0}
         >
-          <p className="text-xs font-semibold uppercase tracking-wider text-accent mb-3">
+          <p className="text-section-label uppercase font-medium tracking-wide text-accent mb-3">
             Consulting-Style Formats
           </p>
-          <h2 className="text-section-title font-bold text-primary">
+          <h2 className="text-section-title-mobile sm:text-section-title-tablet md:text-section-title-desktop font-extrabold text-primary">
             Operational Case Studies
           </h2>
         </motion.div>
@@ -47,26 +47,26 @@ export default function CaseStudies() {
               custom={i + 1}
             >
               <div>
-                <h3 className="text-xl font-bold text-primary mb-6 tracking-tight">
+                <h3 className="text-card-title-mobile sm:text-card-title-desktop font-bold text-primary mb-6">
                   {cs.title}
                 </h3>
 
                 {/* Situation & Challenge Row */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                   <div className="bg-bg-alt border border-border rounded-lg p-4">
-                    <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-secondary mb-2">
+                    <span className="inline-flex items-center gap-1.5 text-section-label uppercase font-medium tracking-wide text-secondary mb-2">
                       <CheckCircle2 className="h-3.5 w-3.5 text-accent" /> Situation
                     </span>
-                    <p className="text-xs text-body leading-relaxed">
+                    <p className="text-body-md text-body">
                       {cs.situation}
                     </p>
                   </div>
 
                   <div className="bg-bg-alt border border-border rounded-lg p-4">
-                    <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-secondary mb-2">
+                    <span className="inline-flex items-center gap-1.5 text-section-label uppercase font-medium tracking-wide text-secondary mb-2">
                       <AlertCircle className="h-3.5 w-3.5 text-warning" /> Challenge
                     </span>
-                    <p className="text-xs text-body leading-relaxed">
+                    <p className="text-body-md text-body">
                       {cs.challenge}
                     </p>
                   </div>
@@ -74,13 +74,13 @@ export default function CaseStudies() {
 
                 {/* Action Items list */}
                 <div className="mb-6">
-                  <span className="block text-xs font-bold uppercase tracking-wider text-secondary mb-3">
+                  <span className="block text-section-label uppercase font-medium tracking-wide text-secondary mb-3">
                     Approach
                   </span>
                   <ul className="space-y-2.5">
                     {cs.actions.map((act, idx) => (
-                      <li key={idx} className="flex items-start gap-2.5 text-sm text-body">
-                        <span className="h-5 w-5 rounded-full bg-accent/10 text-accent flex items-center justify-center text-xs font-bold flex-shrink-0">
+                      <li key={idx} className="flex items-start gap-2.5 text-body-md text-body">
+                        <span className="h-5 w-5 rounded-full bg-accent/10 text-accent flex items-center justify-center text-body-sm font-semibold flex-shrink-0">
                           {idx + 1}
                         </span>
                         <span className="pt-0.5">{act}</span>

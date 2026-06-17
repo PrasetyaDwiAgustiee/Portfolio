@@ -1,18 +1,18 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import path from "path";
+// avoid Node built-in 'path' types requirement by using Vite root-relative alias
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": "/src",
     },
   },
   server: {
-    port: 4000,
-    strictPort: true,
+    port: 3000,
+    strictPort: false,
     host: '127.0.0.1',
   },
 });

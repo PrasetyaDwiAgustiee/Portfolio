@@ -25,10 +25,10 @@ export default function Competencies() {
           variants={fadeUp}
           custom={0}
         >
-          <p className="text-xs font-semibold uppercase tracking-wider text-accent mb-3">
+          <p className="text-section-label uppercase font-medium tracking-wide text-accent mb-3">
             Capability Matrix
           </p>
-          <h2 className="text-section-title font-bold text-primary">
+          <h2 className="text-section-title-mobile sm:text-section-title-tablet md:text-section-title-desktop font-extrabold text-primary">
             Core Competencies
           </h2>
         </motion.div>
@@ -48,7 +48,7 @@ export default function Competencies() {
             >
               {/* Category header */}
               <div className="mb-4">
-                <h3 className="text-xs font-bold text-primary uppercase tracking-wider">
+                <h3 className="text-competency-title font-bold text-primary uppercase">
                   {competency.category}
                 </h3>
               </div>
@@ -58,7 +58,7 @@ export default function Competencies() {
                 {competency.items.map((item) => (
                   <span
                     key={item}
-                    className="inline-flex items-center px-2 py-0.5 rounded-lg text-xs font-semibold bg-bg-alt border border-border text-secondary"
+                    className="inline-flex items-center px-2 py-0.5 rounded-lg text-body-sm font-medium bg-bg-alt border border-border text-secondary"
                   >
                     {item}
                   </span>

@@ -25,10 +25,10 @@ export default function ExecutiveSummary() {
           variants={fadeUp}
           custom={0}
         >
-          <p className="text-xs font-semibold uppercase tracking-wider text-accent mb-3">
+          <p className="text-section-label uppercase font-medium tracking-wide text-accent mb-3">
             Overview
           </p>
-          <h2 className="text-section-title font-bold text-primary">
+          <h2 className="text-section-title-mobile sm:text-section-title-tablet md:text-section-title-desktop font-extrabold text-primary">
             Operational Integrity &amp; Critical Infrastructure
           </h2>
         </motion.div>
@@ -39,7 +39,7 @@ export default function ExecutiveSummary() {
             {executiveSummary.narrative.map((paragraph, i) => (
               <motion.p
                 key={i}
-                className="text-body-fluid text-body leading-relaxed font-normal"
+                className="text-body-lg text-body font-normal text-justify"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: '-80px' }}
@@ -67,7 +67,7 @@ export default function ExecutiveSummary() {
                   <span className="text-5xl font-extrabold text-primary tracking-tightest mb-2">
                     {stat.value}
                   </span>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-secondary">
+                  <span className="text-metadata uppercase font-medium tracking-wide text-secondary">
                     {stat.label}
                   </span>
                 </motion.div>

@@ -25,10 +25,10 @@ export default function Achievements() {
           variants={fadeUp}
           custom={0}
         >
-          <p className="text-xs font-semibold uppercase tracking-wider text-accent mb-3">
+          <p className="text-section-label uppercase font-medium tracking-wide text-accent mb-3">
             Impact
           </p>
-          <h2 className="text-section-title font-bold text-primary">
+          <h2 className="text-section-title-mobile sm:text-section-title-tablet md:text-section-title-desktop font-extrabold text-primary">
             Selected Achievements
           </h2>
         </motion.div>
@@ -49,11 +49,11 @@ export default function Achievements() {
                 <p className="text-5xl font-extrabold text-accent tracking-tightest mb-4">
                   {achievement.metric}
                 </p>
-                <h3 className="text-xs font-bold uppercase tracking-wider text-primary mb-3">
+                <h3 className="text-card-title-mobile sm:text-card-title-desktop font-bold text-primary mb-3">
                   {achievement.title}
                 </h3>
               </div>
-              <p className="text-sm text-body leading-relaxed normal-case mt-4 font-normal">
+              <p className="text-body-md text-body normal-case mt-4 font-normal">
                 {achievement.description}
               </p>
             </motion.div>

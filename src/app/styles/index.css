@@ -1,6 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* stylelint-disable at-rule-no-unknown */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+/* stylelint-enable at-rule-no-unknown */
 
 :root {
   --color-bg: #FFFFFF;
@@ -26,25 +28,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.text-hero {
-  font-size: clamp(2.5rem, 5.5vw, 4rem);
-  line-height: 1.1;
-  letter-spacing: -0.03em;
-  font-weight: 800;
-}
-
-.text-section-title {
-  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  font-weight: 700;
-}
-
-.text-body-fluid {
-  font-size: clamp(0.98rem, 1.15vw, 1.08rem);
-  line-height: 1.75;
-  font-weight: 400;
-}
+/* Removed conflicting custom typography classes:
+.text-hero { ... }
+.text-section-title { ... }
+.text-body-fluid { ... }
+*/
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -80,5 +68,4 @@ body {
 
 *:focus-visible {
   outline: 2px solid var(--color-accent);
-  outline-offset: 3px;
-}
+  outline-offset: 3px;}

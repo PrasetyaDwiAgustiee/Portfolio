@@ -26,10 +26,10 @@ export default function Certifications() {
           variants={fadeUp}
           custom={0}
         >
-          <p className="text-xs font-semibold uppercase tracking-wider text-accent mb-3">
+          <p className="text-section-label uppercase font-medium tracking-wide text-accent mb-3">
             Continuous Learning
           </p>
-          <h2 className="text-section-title font-bold text-primary">
+          <h2 className="text-section-title-mobile sm:text-section-title-tablet md:text-section-title-desktop font-extrabold text-primary">
             Professional Certifications
           </h2>
         </motion.div>
@@ -61,14 +61,14 @@ export default function Certifications() {
                 </div>
                 
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-sm font-bold text-primary mb-1.5 line-clamp-2">
+                  <h3 className="text-card-title-mobile font-semibold text-primary mb-1.5 line-clamp-2">
                     {cert.name}
                   </h3>
-                  <p className="text-xs text-body truncate">
+                  <p className="text-metadata text-body truncate">
                     {cert.issuer}
                   </p>
                   <div className="flex items-center justify-between mt-3">
-                    <span className="inline-flex items-center px-2 py-0.5 rounded-lg text-[10px] font-semibold tracking-wider uppercase bg-bg-alt text-secondary border border-border">
+                    <span className="inline-flex items-center px-2 py-0.5 rounded-lg text-metadata font-medium tracking-wide uppercase bg-bg-alt text-secondary border border-border">
                       {cert.date}
                     </span>
                   </div>

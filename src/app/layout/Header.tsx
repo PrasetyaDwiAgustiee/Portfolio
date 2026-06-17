@@ -90,7 +90,7 @@ export default function Header() {
           <div className="flex-shrink-0">
             <a 
               href="#hero"
-              className="text-sm font-semibold tracking-wider uppercase text-primary hover:text-accent transition-colors"
+              className="text-body-lg font-bold tracking-wide uppercase text-primary hover:text-accent transition-colors"
               onClick={(e) => handleNavClick(e, '#hero')}
             >
               {portfolioData.profile.brand}
@@ -108,7 +108,7 @@ export default function Header() {
                   key={item.href}
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className={`px-3 py-1.5 text-xs font-semibold uppercase tracking-wider transition-all duration-150 rounded-lg ${
+                  className={`px-3 py-1.5 text-body-sm font-medium uppercase tracking-wide transition-all duration-150 rounded-lg ${
                     isActive 
                       ? 'text-accent bg-accent/5 border border-accent/15'
                       : 'text-secondary hover:text-primary hover:bg-bg-alt'
@@ -122,12 +122,7 @@ export default function Header() {
 
           {/* CTA Link & Hamburger Toggle */}
           <div className="flex items-center gap-4">
-            <a
-              href={`mailto:${portfolioData.profile.email}`}
-              className="hidden sm:inline-flex items-center justify-center px-4 py-2 border border-border text-xs font-semibold uppercase tracking-wider rounded-lg bg-white text-primary hover:bg-bg-alt hover:border-borderAlt transition-all"
-            >
-              CONTACT
-            </a>
+            
 
             <button
               type="button"
@@ -165,7 +160,7 @@ export default function Header() {
                     key={item.href}
                     href={item.href}
                     onClick={(e) => handleNavClick(e, item.href)}
-                    className={`block px-3 py-2 text-xs font-semibold uppercase tracking-wider rounded-lg ${
+                    className={`block px-3 py-2 text-body-sm font-medium uppercase tracking-wide rounded-lg ${
                       isActive 
                         ? 'text-accent bg-accent/5 border border-accent/15'
                         : 'text-secondary hover:text-primary hover:bg-bg-alt'
@@ -177,7 +172,7 @@ export default function Header() {
               })}
               <a
                 href={`mailto:${portfolioData.profile.email}`}
-                className="block w-full text-center px-4 py-2.5 mt-4 text-xs font-semibold uppercase tracking-wider rounded-lg bg-accent hover:bg-accent-dark text-white transition-all"
+                className="block w-full text-center px-4 py-2.5 mt-4 text-body-sm font-medium uppercase tracking-wide rounded-lg bg-accent hover:bg-accent-dark text-white transition-all"
               >
                 CONTACT
               </a>

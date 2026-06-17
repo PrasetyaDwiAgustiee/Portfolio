@@ -28,13 +28,13 @@ export default function Contact() {
           variants={fadeUp}
           custom={0}
         >
-          <p className="text-xs font-semibold tracking-widest text-accent uppercase mb-3">
+          <p className="text-section-label uppercase font-medium tracking-wide text-accent mb-3">
             Get In Touch
           </p>
-          <h2 className="text-section-title font-bold text-primary mb-6 tracking-tight">
+          <h2 className="text-cta-mobile sm:text-cta-desktop font-extrabold text-primary mb-6">
             {contact.heading}
           </h2>
-          <p className="text-body-fluid text-body max-w-xl mx-auto mb-10 leading-relaxed">
+          <p className="text-body-lg text-body max-w-xl mx-auto mb-10 font-normal">
             {contact.body}
           </p>
         </motion.div>

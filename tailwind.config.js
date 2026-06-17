@@ -1,57 +1,57 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     container: {
       center: true,
-      padding: {
-        DEFAULT: '1.5rem',
-        sm: '2rem',
-        lg: '3rem',
-        xl: '4rem',
-      },
+      padding: { DEFAULT: '1.5rem', sm: '2rem', lg: '3rem', xl: '4rem' },
     },
     extend: {
       colors: {
-        bg: {
-          DEFAULT: "#FFFFFF",
-          alt: "#F8FAFC", // soft off-white/slate-50
-          deep: "#F1F5F9",
-        },
-        surface: {
-          DEFAULT: "#FFFFFF",
-          alt: "#F8FAFC",
-          hover: "#F1F5F9",
-        },
-        accent: {
-          DEFAULT: "#2563EB", // corporate blue
-          dark: "#1E40AF",
-          light: "#3B82F6",
-        },
+        bg: { DEFAULT: "#FFFFFF", alt: "#F8FAFC", deep: "#F1F5F9" },
+        surface: { DEFAULT: "#FFFFFF", alt: "#F8FAFC", hover: "#F1F5F9" },
+        accent: { DEFAULT: "#2563EB", dark: "#1E40AF", light: "#3B82F6" },
         success: '#10B981',
         warning: '#F59E0B',
-        primary: "#0F172A", // deep slate/navy for headings
-        secondary: "#475569", // slate-600 for body/subtitles
-        body: "#1F2937", // dark charcoal for body text
-        border: "#E2E8F0", // subtle slate border
+        primary: "#0F172A",
+        secondary: "#475569",
+        body: "#1F2937",
+        border: "#E2E8F0",
         borderAlt: "#CBD5E1",
       },
       fontFamily: {
-        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
-        mono: ['JetBrains Mono', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
       },
-      letterSpacing: {
-        tightest: '-0.04em',
-        tighter: '-0.02em',
-        tight: '-0.01em',
+      fontSize: {
+        'hero-desktop': ['64px', { lineHeight: '1.1' }],
+        'hero-tablet': ['48px', { lineHeight: '1.1' }],
+        'hero-mobile': ['36px', { lineHeight: '1.2' }],
+        'hero-desc-desktop': ['18px', { lineHeight: '1.7' }],
+        'hero-desc-mobile': ['16px', { lineHeight: '1.7' }],
+        'section-title-desktop': ['40px', { lineHeight: '1.2' }],
+        'section-title-tablet': ['36px', { lineHeight: '1.2' }],
+        'section-title-mobile': ['30px', { lineHeight: '1.2' }],
+        'section-label': ['13px', { lineHeight: '1.5', letterSpacing: '0.08em' }],
+        'card-title-desktop': ['24px', { lineHeight: '1.3' }],
+        'card-title-mobile': ['20px', { lineHeight: '1.3' }],
+        'body-lg': ['16px', { lineHeight: '1.75' }],
+        'body-md': ['15px', { lineHeight: '1.7' }],
+        'body-sm': ['14px', { lineHeight: '1.6' }],
+        'metadata': ['13px', { lineHeight: '1.5' }],
+        'job-title': ['24px', { lineHeight: '1.3' }],
+        'company': ['18px', { lineHeight: '1.4' }],
+        'competency-title': ['20px', { lineHeight: '1.3' }],
+        'category-title': ['20px', { lineHeight: '1.3' }],
+        'tech-tag': ['15px', { lineHeight: '1.5' }],
+        'cta-desktop': ['48px', { lineHeight: '1.1' }],
+        'cta-mobile': ['32px', { lineHeight: '1.2' }],
       },
+      fontWeight: { normal: 400, medium: 500, semibold: 600, bold: 700, extrabold: 800 },
       boxShadow: {
-        soft: '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
-        card: '0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03)',
-        elegant: '0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05)',
+        soft: '0 4px 6px -1px rgba(0, 0, 0, 0.05)',
+        card: '0 1px 3px 0 rgba(0, 0, 0, 0.05)',
+        elegant: '0 10px 15px -3px rgba(0, 0, 0, 0.05)',
       },
     },
   },

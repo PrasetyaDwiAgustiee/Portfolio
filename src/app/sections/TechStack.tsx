@@ -25,13 +25,13 @@ export default function TechStack() {
           variants={fadeUp}
           custom={0}
         >
-          <p className="text-xs font-semibold uppercase tracking-wider text-accent mb-3">
+          <p className="text-section-label uppercase font-medium tracking-wide text-accent mb-3">
             Technologies &amp; Frameworks
           </p>
-          <h2 className="text-section-title font-bold text-primary mb-4">
+          <h2 className="text-section-title-mobile sm:text-section-title-tablet md:text-section-title-desktop font-extrabold text-primary mb-4">
             {techStack.title}
           </h2>
-          <p className="text-sm text-secondary max-w-2xl">
+          <p className="text-body-lg text-secondary max-w-2xl">
             {techStack.subtitle}
           </p>
         </motion.div>
@@ -50,7 +50,7 @@ export default function TechStack() {
               whileHover={{ y: -3 }}
             >
               {/* Group Category */}
-              <h3 className="text-xs font-bold text-primary uppercase tracking-wider mb-4 border-b border-border pb-2">
+              <h3 className="text-category-title font-bold text-primary uppercase mb-4 border-b border-border pb-2">
                 {group.category}
               </h3>
 
@@ -59,7 +59,7 @@ export default function TechStack() {
                 {group.items.map((item) => (
                   <span
                     key={item}
-                    className="inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-semibold bg-bg-alt border border-border text-secondary"
+                    className="inline-flex items-center px-2.5 py-1 rounded-lg text-tech-tag font-medium tracking-wide bg-bg-alt border border-border text-secondary"
                   >
                     {item}
                   </span>
